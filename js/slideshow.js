@@ -15,7 +15,7 @@ const changeImage = () => {
     
     slide.src = images[counter];
 
-    if(counter < images.length) {
+    if(counter < images.length -1) {
         counter++;
     }else {
         counter = 0;
