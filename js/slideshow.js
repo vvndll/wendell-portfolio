@@ -12,6 +12,7 @@ images[2] = "../assets/images/3.png";
 images[3] = "../assets/images/4.png";
 
 const changeImage = () => {
+    
     slide.src = images[i];
 
     if(i < images.length -1) {
@@ -23,7 +24,7 @@ const changeImage = () => {
     setTimeout("changeImage()", time);
 };
 
-window.onload = changeImage;
+window.addEventListener("load", changeImage);
 
 
 
