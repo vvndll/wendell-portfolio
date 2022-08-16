@@ -1,24 +1,24 @@
 'use strict';
 
-const slide = document.getElementById("slide");
+const slide = document.querySelector("div.preview__box img");
 
-let i = 0;
-let images = [];
+let counter = 1;
+let images = [
+    "./assets/images/1.png",
+    "./assets/images/2.png",
+    "./assets/images/3.png",
+    "./assets/images/4.png"
+];
 let time = 1000;
-
-images[0] = "assets/images/1.png";
-images[1] = "assets/images/2.png";
-images[2] = "assets/images/3.png";
-images[3] = "assets/images/4.png";
 
 const changeImage = () => {
     
-    slide.src = images[i];
+    slide.src = images[counter];
 
-    if(i < images.length -1) {
-        i++;
+    if(counter < images.length) {
+        counter++;
     }else {
-        i = 0;
+        counter = 0;
     };
 
     setTimeout("changeImage()", time);
