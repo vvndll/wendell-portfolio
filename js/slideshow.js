@@ -6,10 +6,10 @@ let i = 0;
 let images = [];
 let time = 1000;
 
-images[0] = "../assets/images/1.png";
-images[1] = "../assets/images/2.png";
-images[2] = "../assets/images/3.png";
-images[3] = "../assets/images/4.png";
+images[0] = "./assets/images/1.png";
+images[1] = "./assets/images/2.png";
+images[2] = "./assets/images/3.png";
+images[3] = "./assets/images/4.png";
 
 const changeImage = () => {
     
