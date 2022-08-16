@@ -2,13 +2,14 @@
 
 const slide = document.querySelector("div.preview__box img");
 
-let counter = 1;
+let counter = 0;
 let images = [
     "./assets/images/1.png",
     "./assets/images/2.png",
     "./assets/images/3.png",
     "./assets/images/4.png"
 ];
+
 let time = 1000;
 
 const changeImage = () => {
